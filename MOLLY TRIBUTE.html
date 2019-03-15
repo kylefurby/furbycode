@@ -1,0 +1,203 @@
+
+<!--LINKS AND INFO-->
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Eczar: 400, 600" rel="stylesheet"> 
+
+  <!--CSS PAGE STYLING-->
+<style>
+
+body {
+  margin: 0px;
+  background-image: url(https://designshack.net/wp-content/uploads/STDS-11.jpg);
+  background-repeat: repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8em auto auto 8em;
+  grid-template-areas: "header" "img-div" "content" "footer";
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-area: header;
+  background-color: rgba(111,12,79,0.8);
+}
+
+#title {
+  color: white;
+  font-family: Eczar;
+  font-weight: 400;
+  text-align: center;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+#title-bold {
+  color: white;
+  font-family: Eczar;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  color: #6F0C4F;
+  text-align: center;
+  font-family: Eczar;
+  font-weight: 400
+}
+.h2-bold {
+  color: #6F0C4F;
+  text-align:center;
+  font-family: Eczar;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#img-div {
+  grid-area: img-div;
+  text-align: center;
+  width: 100%;
+}
+
+#image {
+  display: block;
+  max-width: 75%;
+  height: auto;
+  background-color: blue;
+  margin: 2em auto 1em auto;
+  border-style: solid;
+  border-width: 0.5em;
+  border-color: #EEC900;
+  opacity: 0.5;
+}
+
+#image:hover {
+  opacity: 1;
+}
+
+#img-caption {
+  font-family: Eczar;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  color: #6F0C4F;
+}
+.quotes {
+align-items: center;
+opacity: 1;
+margin: 2em 1em 1em 2em;
+}
+
+#tribute-info {
+height: auto;
+text-align: center;
+font-style: italic;
+font-family: Eczar;
+padding-top: 0.5em;
+padding-bottom: 2em;
+}
+
+#quote1 {
+  margin: 0.5m;
+  padding-bottom: 1em;
+  opacity: 0.1;
+}
+#quote1:hover {
+  opacity: 1;
+}
+
+#quote2 {
+  margin: 0.5em;
+  padding-bottom: 1em;
+  opacity: 0.1;
+}
+
+#quote2:hover {
+  opacity: 1;
+}
+
+#quote3 {
+  margin: 0.5em;
+  padding-bottom: 1em;
+  opacity: 0.1;
+}
+
+#quote3:hover {
+  opacity: 1;
+}
+
+.footer {
+  margin: 2em 1em 1em 2em;
+  align-items: center;
+}
+
+.paragraph {
+  color: white;
+  opacity: 0.7;
+  text-align: center;
+  font-weight: 400
+}
+
+span.avoidwrap { 
+  display: inline-block; 
+}
+
+#word {
+  font-weight: 600;
+  color: #6F0C4F;
+}
+
+hr{
+  max-width:75%;
+  opacity: 0.5;
+}
+
+</style>
+
+</head>
+<main id="main">
+<div class="grid-container">
+
+<!--HEADER-->
+<div class="header">
+  <h1 id="title"><span id="title-bold">MOLLYMAUK </span>"Lucien" TEALEAF </h1>
+</div>
+
+<!--IMAGE-->
+<div id="img-div">
+  <img id="image" src="https://pbs.twimg.com/media/Dkyr9HhVsAAzPle.jpg" alt="Mollymauk Tealeaf">
+  
+    <p id="img-caption"><span class="avoidwrap">"People are looking for a path, they're looking for a path. And I'll tell you -- and this is true -- I did my best every town I went to and every town I left, no matter how they treated me -- and a lot of them treated me with deep disrespect; I left every town better than I found it."</span><span class="avoidwrap"> -Mollymauk Tealeaf (C2E31)</span></p>
+  
+</div>
+
+<!--QUOTES-->
+    <div class="quotes">
+      <h2>Stories <span class="avoidwrap">from the <span class="h2-bold">circus</span></span></h2>
+    </div>
+
+    <div id="tribute-info">
+      <span id="quote1"><p id="quote">"We're carnival people: we <span id="word">all</span> have our issues. <br>  You don't wind up here if you don't have <span id="word">some</span> kind of issues."</p></span>
+      <hr>
+      <span id="quote2"><p id="quote">"Be the <span id="word">chaos</span> you want to see in the world." </p></span>
+      <hr>
+      <span id="quote3"><p id="quote">"There's nothing better than waking up with <span id="word">no pants and flowers</span> in your hair."</p></span>
+    </div>
+    
+<!--FOOTER (put img credit, link to char sheet-->
+  <div class="footer">
+    <p class="paragraph"><a href="https://criticalrole.fandom.com/wiki/Mollymauk_Tealeaf" target="_blank" id="tribute-link">CLICK HERE</a> <span class="avoidwrap">for info and rememberance</span>
+<br><a href="https://twitter.com/iDrawBagman/status/1030387807762751489">Image Source</a> 
+</div>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</main>
