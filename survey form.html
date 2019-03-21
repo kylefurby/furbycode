@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head>
+		<link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet"> 
+		
+<style>
+
+html, body {
+	background-color: teal;
+	text-align: center;
+	font-family: 'Niconne', Helvetica;
+	min-width: 320px;
+}
+
+header {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 20px;
+}
+
+#form-outer {
+	background-color: #d1cab5;
+	margin: 0 auto;
+	border-radius: 4px;
+	width: 75%;
+	max-width: 900px;
+	padding: 10px;
+	padding-top: 25px;
+}
+
+.labels {
+	font-family: Helvetica;
+	display: inline-block;
+	text-align: right;
+	width: 48%;
+	padding: 5px;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.infoTab {
+	display: inline-block;
+	text-align: left;
+	width: 48%;
+	vertical-align: middle;
+	font-family: Helvetica;
+	
+}
+
+.input-field {
+	width: 200px;
+	height: 25px;
+	padding: 2px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.dropdown {
+	height: 35px;
+	width: 200px;
+	padding: 5px;
+	margin: 10px;
+	margin-top: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+}
+
+.userRatings, input[type="checkbox"] {
+	float: left;
+	margin-right: 5px;
+}
+
+#submit {
+	background-color: #cc8316;
+	border-radius: 5px;
+	height: 35px;
+	width: 125px;
+	padding: 5px;
+	margin: 10px;
+	margin-top: 10px;
+	border: 1px solid black;
+	text-align: center;
+
+}
+
+#description {
+	font-size: 40px;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<h1 id="title">Survey Form</h1>
+
+<form id="survey-form">
+<div id="form-outer">
+	<p id="description"> How do YOU do this?</p>
+	<div class="column1">
+		<div class="labels">
+			<label id="name-label" for="name">* Name: </label>
+			</div>
+			<div class="infoTab">
+				<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+				</div>
+		</div>
+	<div class="column2">
+		<div class="labels">
+			<label id="email-label" for="email">* Email: </label>
+			</div>
+			<div class="infoTab">
+				<input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+				</div>
+	<div class="column3">
+		<div class="labels">
+			<label id="number-label" for "userAge">* Age: </label>
+			</div>
+			<div class="infoTab">
+				<input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Age" required>
+				</div>
+
+	<div class="column4">
+		<div class="labels">
+			<label for="currentClass">What role do you play?</label></div>
+		<div class="infoTab">
+			<select id="dropdown" name="currentClass" class="dropdown">
+			<option selected disabled>Select a Class</option>
+			<option value="barbarian">Barbarian</option>
+			<option value="bard">Bard</option>
+			<option value="cleric">Cleric</option>
+			<option value="druid">Druid</option>
+			<option value="fighter">Fighter</option>
+			<option value="monk">Monk</option>
+			<option value="paladin">Paladin</option>
+			<option value="ranger">Ranger</option>
+			<option value="rogue">Rogue</option>
+			<option value="sorcerer">Sorcerer</option>
+			<option value="warlock">Warlock</option>
+			<option value="wizard">Wizard</option>
+			<option value="multiclass">Multiclass</option>
+			<option value="homebrew">Homebrew</option></select>
+			</div>
+
+	<div class="column5">
+		<div class="labels">
+			<label for="partysize">How large is your adventuring party?</label></div>
+		<div class="infoTab">
+			<ul style="list-style: none;">
+				<li class="radio"><label>1 - 3 members<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+				<li class="radio"><label>4 - 6 members<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+				<li class="radio"><label>6+ members<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+				</ul></div>
+
+	<div class="column6">
+		<div class="labels">
+			<label for="playStyle">What's your perfered playstyle?</label></div>
+		<div class="infoTab">
+			<select id="playStyle" name="playStyle" class="dropdown">
+			<option selected disabled>Select a playstyle</option>
+			<option value="rpheavy">Roleplay heavy</option>
+			<option value="combatHeavy">Combat heavy</option>
+			<option value="rpcombat">RP/Combat mix</option>
+			<option value="storyadven">Story adventures</option>
+			</select></div>
+
+	<div class=column7">
+		<div class="labels">
+			<label for="interests">What do you perfer in your game? <span class="avoidwrap">(select all that apply)</span></label></div>
+		<div class="infoTab">
+			<ul id="interests" style="list-style: none;">
+			<li class="checkbox"><label><input name="perfer" value="1" type="checkbox" class="interests">Massive boss lairs</label></li>
+			<li class="checkbox"><label><input name="perfer" value="2" type="checkbox" class="interests">Lots of traps</label></li>
+			<li class="checkbox"><label><input name="perfer" value="3" type="checkbox" class="interests">Ton of small of enemies</label></li>
+			<li class="checkbox"><label><input name="perfer" value="4" type="checkbox" class="interests">One MASSIVE bad guy</label></li>
+			<li class="checkbox"><label><input name="perfer" value="5" type="checkbox" class="interests">More loot than my bag can carry</label></li>
+			<li class="checkbox"><label><input name="perfer" value="6" type="checkbox" class="interests">Mind bending puzzles</label></li>
+				</ul></div>
+
+	<div class="column8">
+		<div class="labels">
+			<label for="comments">Any comments or suggestions?</label></div>
+		<div class="infoTab">
+			<textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comments here... "></textarea>
+			</div>
+		
+	<button id="submit" type="submit">Submit</button>
+	</form>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
