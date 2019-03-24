@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">  
+
+
+<style>
+
+body {
+    background-color: black;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/** global styling**/
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#button {
+    background-color: #8e44ad;
+    border-radius: 15px;
+    height: 45px;
+    width: 125px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Exo 2';
+    color: white;
+}
+
+#button:hover {
+    background-color: #bf55ec;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.grid {
+    display: flex;
+}
+
+/** nav bar styling**/
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 25px;
+    padding: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    
+}
+
+#header-img {
+    width: 50%;
+    height: 65%;
+    max-width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-left: 0;
+}
+
+nav {
+    font-weight: 400;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    padding: 0 auto;
+    }
+}
+
+ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+<div class="page-wrapper">
+    <header>
+        <div id="header">
+            <img id="header-img" src="https://i.imgur.com/KIqkWAZ.png" alt="handbooker helper logo"/>
+        
+        <nav id="nav-bar">
+            <ul><li><a class="nav-link" href="#infoLinks">Episodes</a></li>
+                <li><a class="nav-link" href="#features">How It Works</a></li>
+                <li><a class="nav-link" href="https://critrole.com">More from Critical Role</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="how-it-works">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hD-LWHhiseE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section id="features">
+
+            <div class="grid">
+                <div class="icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="description">
+                    <h2>Easy to Learn</h2>
+                    <p>Teaches you the game's system in quick and easy to digest weekly episodes.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fas fa-dice-d20"></i>
+                </div>
+                <div class="description">
+                    <h2>Customization</h2>
+                    <p>Dive into the depth of D&D's customization and creation with videos covering classes and races.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fab fa-critical-role"></i>
+                </div>
+                <div class="description">
+                    <h2>Guest Hosts</h2>
+                    <p>Brought to by members of the Critical Role family and industry friends.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="infoLinks">
+            <div id="episodes">
+                <div id="epi-link-heading">
+                   <h2>Episodes</h2>
+                </div>
+            <ul>
+                <li>Learn all aspects of D&D.</li>
+                <li>Wonderful cast of hosts.</li>
+                <li>Short and enjoyable.</li>
+                <li>Updates every Wednesday</li>
+            </ul>
+            <form action="https://critrole.com/filter/handbooker-helper">
+                <input type="submit" id="button" value="Click Here" />
+            </form>
+            </div>
+
+            <div id="whats-init">
+                <div id="whats-init-heading">
+                    <h2>Learning Opportunities</h2>
+                </div>
+                <li><a href="https://youtu.be/WoV5iM7peOg">How to do your characters ability scores.</a></li>
+                <li><a href="https://youtu.be/i9ZnlZ7VudM">Learn to cast spells!</a></li>
+                <li><a href="https://youtu.be/XAAm3WEpwjI">All that there is to weapons...</a></li>
+                <li><a href="https://youtu.be/V36iOTmG6-c">...and armor!</a></li>
+
+
+            </div>
+
+            <div id="moreInfo">
+                <div id="moreInfo-heading">
+                    <h2>Is it Thursday yet?</h2>
+                </div>
+            <ul>
+                <li>More content from Critical Role</li>
+                <li>Between the Sheets</li>
+                <li>Talks Machina</li>
+                <li>And many more..</li>
+            </ul>
+            <form action="https://www.twitch.tv/criticalrole">
+                <input type="submit" id="button" value="CR Twitch" />
+            </form>
+            </div>
+
+        </section>
+
+        <div class="footer">
+            <p>Logos and videos: All rights reserved to <a href="https://critrole.com">Critical Role</a></p>
+        </div>
+    </div>
+</body>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
