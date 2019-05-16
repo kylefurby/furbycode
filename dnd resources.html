@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
+
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+
 <html>
 <body>
 
@@ -64,6 +66,62 @@ h3 {
     font-family: 'Permanent Marker'
 }
 
+code {
+    display: block;
+    text-align: left;
+
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    max-width: 275px;
+    line-height: 2;
+    background-color: rgba(247, 247, 247, 0.226);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  #navbar ul{
+  border:1px solid;
+    height:207px;
+  }
+    #navbar{
+      background-color:white;
+      position:absolute;
+      top:0;
+      padding:0;
+      margin: 0;
+      width:100%;
+      max-height:275px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid;
+    }
+  #main-doc{
+    position: relative;
+    margin-left:0px;
+    margin-top:270px;
+  }
+  #main-doc section {
+/*     padding-top: 240px; */
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc{
+    margin-left:-10px;
+  }
+  code{
+    margin-left:-20px;
+    width:100%;
+    padding:15px;
+    padding-left:10px;
+    padding-right:45px;
+    min-width:233px;
+  }
+}
+
 </style>
 
 <nav id="navbar">
@@ -90,8 +148,8 @@ h3 {
             <li>Reactions</li></a>
         <a class="nav-link" href="#saving_throws" rel="internal">
             <li>Saving Throws</li></a>
-        <a class="nav-link" href="#skill_checks" rel="internal">
-            <li>Skill Checks</li></a>
+        <a class="nav-link" href="#ability_checks" rel="internal">
+            <li>Ability Checks</li></a>
         </ul>
         </nav>
 
@@ -147,9 +205,9 @@ h3 {
             <p>You can only take your bonus action on your turn, so you must chose which action to take if you have more than one available.</p>
             <p>You may not trade your action and bonus actions, and if a condition forces you to lose an action, you also lose your bonus action.</p>
             <p><h3>Homebrew rules:</h3></p>
-            <p>To improve combat flow, use of multiple spells for casters, and improve fun of the game, the following rules are used in some homebrew games.</p>
+            <code><p>To improve combat flow, use of multiple spells for casters, and improve fun of the game, the following rules are used in some homebrew games.</p>
             <p>Health potions may be used as bonus actions ONLY when taken by self. You may not use a bonus action to heal party member with a health pot.</p>
-            
+            </code>
 
             
         </article>
@@ -166,13 +224,13 @@ h3 {
             <p>Then add your profcinceny bonus</p>
             <p>And finally, add any bonus from feats, skills, or weapon bonus. If this number is higher than your opponents armor class, roll damage.</p>
             <p><h3>To roll damage:</h3></p>
-            <p>Roll your weapon's damage die. Those may vary by weapon (1d6, 1d8, 1d10, 1d12).</p>
+            <code><p>Roll your weapon's damage die. Those may vary by weapon (1d6, 1d8, 1d10, 1d12).</p>
             <p>Add your Strength modifier</p>
             <p>Finally, add any bonus from skill, feat, or weapon (e.g 1d8+2, the bonus would be the +2). </p>
             <p>If you are wielding two weapons, or fighting unarmed, you are able to use your bonus action to perform an attack with your offhand. To attack with your offhand, roll an attack without any attack bonus other than your STR modifier.</p>
             <p>Some classes or feats will allow the player to use finesse weapons. These weapons use the Dexterity modifier. So when using a finesse weapon, add your dex modifier instead of strength.</p>
             <p>You can also attack unarmed. If you do, just roll a normal attack. If successful, add 1 + your strength modifier. You are proficient attacking unarmed. Attacking with an object found on the ground is a possibility as well. Such as a chair leg, candle holder, or any other improvised weapon. When doing so, roll an attack without any profincencies, because it is not something you wield normally.</p>
-
+            </code>
         </artile>
     </section>
 
@@ -187,10 +245,10 @@ h3 {
             <p>Then add your profcinceny bonus</p>
             <p>And finally, add any bonus from feats, skills, or weapon bonus. If this number is higher than your opponents armor class, roll damage.</p>
             <p><h3>To roll damage:</h3></p>
-            <p>Roll your weapon's damage die. Those may vary by weapon (1d6, 1d8, 1d10, 1d12).</p>
+            <code><p>Roll your weapon's damage die. Those may vary by weapon (1d6, 1d8, 1d10, 1d12).</p>
             <p>Add your Dexterity modifier</p>
             <p>Finally, add any bonus from skill, feat, or weapon (e.g 1d8+2, the bonus would be the +2). </p>
-            <p>Range on your weapon is factor in your attacking. A weapon will have a range detailed next to it. The first number, is your normal range. the distance from zero to that number is your perfered distance to strike. From the first number to the second number, shots come at a disadvantage. The third range, is an automatic failure. </p> 
+            <p>Range on your weapon is factor in your attacking. A weapon will have a range detailed next to it. The first number, is your normal range. the distance from zero to that number is your perfered distance to strike. From the first number to the second number, shots come at a disadvantage. The third range, is an automatic failure. </p> </code>
         </article>
     </section>
 
@@ -251,10 +309,10 @@ h3 {
             <p>Many spells specify that a target can make a saving throw to avoid some or all of a spells effect or damage. The spell specifies what ability is used and any effect that occurs on success or failure.</p>
             <p>The DC (Difficulty class) to resist one of your spells equals 8 + your spellcasting modifier + your proficiency bonus + any special modifiers. </p>
             <p><h3>Homebrew Rules</h3></p>
-            <p>In large groups, to speed up combat and increase the action, more than one spell can be cast per round.</p>
+            <code><p>In large groups, to speed up combat and increase the action, more than one spell can be cast per round.</p>
             <p>If a spell is cast at a higher level, a second spell can be cast as long as it is below level two. Both spells must follow the actioin/bonus action requirements. If a caster does not have any spell slots availabile lower than a spell cast, a second spell cannot be cast. </p>
             <p>For example. If a 5th level spell is cast as an action, any bonus action spell level 2, level 1, or a cantrip can be cast. </p>
-            
+            </code>
 
         </article>
     </section>
@@ -276,7 +334,7 @@ h3 {
             <p><h3>Falling Unconscious</h3></p>
             if damage reduces you to 0 hit points and fails to kill you, you fall unconscious. This unconsciousness ends if you regain any hit points.
             <p><h3>Homebrew rules</h3></p>
-            <p>Health potions may be used on a bonus action if taken by self. If a potion is given to another, that causes a full action as normal.</p>
+            <code><p>Health potions may be used on a bonus action if taken by self. If a potion is given to another, that causes a full action as normal.</p></code>
             
         </article>
     </section>
@@ -300,7 +358,7 @@ h3 {
         </article>
     </section>
 
-    <section class="main-section" id="skill_checks">
+    <section class="main-section" id="ability_checks">
         <header>Ability Checks</header>
         <article>
             <p>An ability check tests a character’s or monster’s innate talent and Training in an effort to overcome a Challenge. The GM calls for an ability check when a character or monster attempts an action (other than an attack) that has a chance of failure. When the outcome is uncertain, the dice determine the results.</p>
@@ -309,7 +367,7 @@ h3 {
         </article>
     </section>
 
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </main>
 
